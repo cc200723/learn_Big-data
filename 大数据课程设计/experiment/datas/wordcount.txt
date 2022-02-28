@@ -1,0 +1,6 @@
+I come from heilongjiang
+I love haerbin
+I study Hadoop
+I study Hive
+I study Hbase
+I study Spark

@@ -1,0 +1,6 @@
+When should I use HBase
+Are there other HBase FAQs
+Does HBase support SQL
+How can I find examples of NoSQL or HBase
+See the link to the BigTable paper in Other Information About HBase as well as the other papers
+What is the history of HBase

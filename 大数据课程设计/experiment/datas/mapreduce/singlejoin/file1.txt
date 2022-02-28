@@ -1,0 +1,10 @@
+child parent
+Tom Lucy
+Jone Lucy
+Lucy Jack
+Jack Mick
+Mick Alick
+Alma Terry
+Mark Terry
+Terry king
+Jone Terry

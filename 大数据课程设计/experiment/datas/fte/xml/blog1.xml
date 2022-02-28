@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<posts>
+    <row Id="1" CreationDate="1528649516025" ViewCount="123295" FormHTTP="http://hive.apache.org/" KeyWord="hive" />
+	<row Id="2" CreationDate="1528669516025" ViewCount="25634" FormHTTP="http://pig.apache.org/" KeyWord="pig" />
+	<row Id="3" CreationDate="1528690530025" ViewCount="2543" FormHTTP="https://cwiki.apache.org/confluence/display/PIG/Pig+Training" KeyWord="pig" />
+	<row Id="4" CreationDate="1528680530135" ViewCount="3462" FormHTTP="http://pig.apache.org/#Getting+Started/" KeyWord="pig" />
+</posts>

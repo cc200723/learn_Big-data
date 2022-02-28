@@ -1,0 +1,34 @@
+package hdfs;
+import java.io.IOException;
+import java.net.URI;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
+import org.apache.hadoop.io.compress.CompressionCodec;
+import org.apache.hadoop.io.compress.CompressionInputStream;
+import org.apache.hadoop.io.compress.GzipCodec;
+import org.apache.hadoop.util.ReflectionUtils;
+public class GZipDCodec {
+    public static void main(String[] args) throws IOException {
+        String srcUrl = args[0];
+        String targetUrl = args[1];
+
+        Configuration conf = new Configuration();
+        FileSystem inFs = FileSystem.get(URI.create(srcUrl),conf);
+        FileSystem outFs = FileSystem.get(URI.create(targetUrl),conf);
+
+        CompressionCodec codec = ReflectionUtils.newInstance(GzipCodec.class,conf);
+        FSDataOutputStream outputStream = outFs.create(new Path(targetUrl));
+        CompressionInputStream inputStream = codec.createInputStream(inFs.open(new Path(srcUrl)));
+
+        IOUtils.copyBytes(inputStream, outputStream, 4096,false);
+
+        outputStream.close();
+        inputStream.close();
+
+        System.out.println("input filesize:"+inFs.getFileStatus(new Path(srcUrl)).getLen()+"b");
+        System.out.println("output filesize:"+outFs.getFileStatus(new Path(targetUrl)).getLen()+"b");
+    }
+}

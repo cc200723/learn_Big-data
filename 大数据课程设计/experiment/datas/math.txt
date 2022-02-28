@@ -1,0 +1,4 @@
+zhangsan	88
+lisi	99
+wangwu	66
+zhaoliu	77

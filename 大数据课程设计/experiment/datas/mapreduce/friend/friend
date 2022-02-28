@@ -1,0 +1,7 @@
+xiaoming	laowang	xiaohua	lingling
+laowang	xiaoming	xiaolan
+xiaohua	xiaoming	xiaogang	xiaolan
+lingling	xiaoming	xiaogang	xiaolan	meimei
+xiaogang	xiaohua	xiaolan	lingling
+meimei	xiaolan	lingling
+xiaolan	xiaohua	laowang	lingling	meimei

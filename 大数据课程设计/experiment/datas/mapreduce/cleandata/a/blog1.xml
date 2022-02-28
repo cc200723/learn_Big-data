@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<posts>
+	<row Id="1" CreationDate="2014-07-11T19:42:24.707" ViewCount="115" FormHTTP="http://hadoop.apache.org/" KeyWord="hadoop" />
+	<row Id="2" CreationDate="2017-07-20T20:03:57.617" ViewCount="13352" FormHTTP="http://hbase.apache.org/" KeyWord="hbase" />
+	<row Id="3" CreationDate="2018-05-10T19:53:47.860" ViewCount="1345" FormHTTP="http://hadoop.apache.org/docs/r2.7.6/hadoop-project-dist/hadoop-common/releasenotes.html" KeyWord="hadoop" />   
+</posts>
